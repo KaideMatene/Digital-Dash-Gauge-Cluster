@@ -1,0 +1,287 @@
+{
+  "name": "Fuel",
+  "gauge_type": "fuel",
+  "start_angle": 232.0,
+  "sweep_angle": 90,
+  "min_value": 0,
+  "max_value": 100,
+  "background_color_r": 245,
+  "background_color_g": 235,
+  "background_color_b": 215,
+  "needles": {
+    "fuel": {
+      "name": "Fuel Level",
+      "color_r": 255,
+      "color_g": 0,
+      "color_b": 0,
+      "thickness": 3.0,
+      "length_offset": 30,
+      "center_cap_size": 15,
+      "style": "3d_pointer",
+      "enabled": true
+    },
+    "water": {
+      "name": "Water Temp",
+      "color_r": 0,
+      "color_g": 100,
+      "color_b": 255,
+      "thickness": 2.0,
+      "length_offset": 50,
+      "center_cap_size": 8,
+      "style": "3d_pointer",
+      "enabled": true
+    }
+  },
+  "background_image": null,
+  "image_offset_x": 0,
+  "image_offset_y": 0,
+  "show_numbers": true,
+  "number_interval": 0,
+  "text_size": 10,
+  "night_mode_bg_r": 30,
+  "night_mode_bg_g": 30,
+  "night_mode_bg_b": 30,
+  "night_mode_text_r": 255,
+  "night_mode_text_g": 255,
+  "night_mode_text_b": 255,
+  "rotation_center_x": 0,
+  "rotation_center_y": 0,
+  "calibration_points": [],
+  "needle_image_path": "gauges/needle.svg",
+  "needle_calibrations": {
+    "fuel": {
+      "needle_id": "fuel",
+      "needle_image_path": "c:\\Projects\\Supra Digital Cluster\\gauges\\needle.svg",
+      "gauge_name": "Fuel",
+      "needle_pivot_x": 194,
+      "needle_pivot_y": 209,
+      "needle_end_x": 76,
+      "needle_end_y": 252,
+      "gauge_pivot_x": 1069,
+      "gauge_pivot_y": 742,
+      "calibration_points": [
+        {
+          "x": 826,
+          "y": 739,
+          "value": 0.0
+        },
+        {
+          "x": 1082,
+          "y": 486,
+          "value": 100.0
+        },
+        {
+          "x": 896,
+          "y": 566,
+          "value": 50.0
+        }
+      ],
+      "min_value": 0,
+      "max_value": 100
+    },
+    "water": {
+      "needle_id": "water",
+      "needle_image_path": "c:\\Projects\\Supra Digital Cluster\\gauges\\needle.svg",
+      "gauge_name": "Fuel",
+      "needle_pivot_x": 194,
+      "needle_pivot_y": 210,
+      "needle_end_x": 77,
+      "needle_end_y": 251,
+      "gauge_pivot_x": 1242,
+      "gauge_pivot_y": 1062,
+      "calibration_points": [
+        {
+          "x": 1011,
+          "y": 1056,
+          "value": 50.0
+        },
+        {
+          "x": 1245,
+          "y": 816,
+          "value": 130.0
+        },
+        {
+          "x": 1165,
+          "y": 822,
+          "value": 110.0
+        },
+        {
+          "x": 1101,
+          "y": 861,
+          "value": 100.0
+        },
+        {
+          "x": 1056,
+          "y": 909,
+          "value": 90.0
+        },
+        {
+          "x": 1014,
+          "y": 957,
+          "value": 80.0
+        },
+        {
+          "x": 992,
+          "y": 1002,
+          "value": 70.0
+        }
+      ],
+      "min_value": 0,
+      "max_value": 100
+    },
+    "fuel_set1": {
+      "needle_id": "fuel",
+      "needle_image_path": "c:\\Projects\\Supra Digital Cluster\\gauges\\needle.svg",
+      "gauge_name": "Fuel",
+      "needle_pivot_x": 194,
+      "needle_pivot_y": 209,
+      "needle_end_x": 76,
+      "needle_end_y": 252,
+      "gauge_pivot_x": 1069,
+      "gauge_pivot_y": 742,
+      "calibration_points": [
+        {
+          "x": 826,
+          "y": 739,
+          "value": 0.0
+        },
+        {
+          "x": 1082,
+          "y": 486,
+          "value": 100.0
+        },
+        {
+          "x": 896,
+          "y": 566,
+          "value": 50.0
+        }
+      ],
+      "min_value": 0,
+      "max_value": 100,
+      "calibration_set": "set1",
+      "calibration_set_color": "red"
+    },
+    "water_set1": {
+      "needle_id": "water",
+      "needle_image_path": "c:\\Projects\\Supra Digital Cluster\\gauges\\needle.svg",
+      "gauge_name": "Fuel",
+      "needle_pivot_x": 194,
+      "needle_pivot_y": 210,
+      "needle_end_x": 77,
+      "needle_end_y": 251,
+      "gauge_pivot_x": 1242,
+      "gauge_pivot_y": 1062,
+      "calibration_points": [
+        {
+          "x": 1011,
+          "y": 1056,
+          "value": 50.0
+        },
+        {
+          "x": 1245,
+          "y": 816,
+          "value": 130.0
+        },
+        {
+          "x": 1165,
+          "y": 822,
+          "value": 110.0
+        },
+        {
+          "x": 1101,
+          "y": 861,
+          "value": 100.0
+        },
+        {
+          "x": 1056,
+          "y": 909,
+          "value": 90.0
+        },
+        {
+          "x": 1014,
+          "y": 957,
+          "value": 80.0
+        },
+        {
+          "x": 992,
+          "y": 1002,
+          "value": 70.0
+        }
+      ],
+      "min_value": 0,
+      "max_value": 100,
+      "calibration_set": "set1",
+      "calibration_set_color": "red"
+    }
+  },
+  "symbols": {
+    "symbol_1": {
+      "symbol_id": "symbol_1",
+      "image_path": "C:/Projects/Supra Digital Cluster/gauges/symbols/Low Fuel.png",
+      "position_x": 912,
+      "position_y": 790,
+      "scale": 1.0,
+      "anchor": "center",
+      "visible": false,
+      "visibility_condition": {
+        "condition_type": "bool",
+        "data_key": "",
+        "show_when": true,
+        "operator": "",
+        "value": 0.0
+      },
+      "z_index": 0
+    },
+    "symbol_2": {
+      "symbol_id": "symbol_2",
+      "image_path": "C:/Projects/Supra Digital Cluster/gauges/symbols/High_Beam.png",
+      "position_x": 1245,
+      "position_y": 531,
+      "scale": 1.0,
+      "anchor": "center",
+      "visible": true,
+      "visibility_condition": {
+        "condition_type": "bool",
+        "data_key": "",
+        "show_when": true,
+        "operator": "",
+        "value": 0.0
+      },
+      "z_index": 0
+    },
+    "symbol_3": {
+      "symbol_id": "symbol_3",
+      "image_path": "C:/Projects/Supra Digital Cluster/gauges/symbols/Low_water_warning.png",
+      "position_x": 1319,
+      "position_y": 832,
+      "scale": 1.0,
+      "anchor": "center",
+      "visible": true,
+      "visibility_condition": {
+        "condition_type": "bool",
+        "data_key": "",
+        "show_when": true,
+        "operator": "",
+        "value": 0.0
+      },
+      "z_index": 0
+    },
+    "symbol_4": {
+      "symbol_id": "symbol_4",
+      "image_path": "C:/Projects/Supra Digital Cluster/gauges/symbols/traction-control-warning-light.png",
+      "position_x": 1319,
+      "position_y": 630,
+      "scale": 0.20000000000000015,
+      "anchor": "center",
+      "visible": true,
+      "visibility_condition": {
+        "condition_type": "bool",
+        "data_key": "",
+        "show_when": true,
+        "operator": "",
+        "value": 0.0
+      },
+      "z_index": 0
+    }
+  }
+}

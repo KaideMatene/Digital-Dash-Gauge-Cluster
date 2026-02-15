@@ -1,0 +1,32 @@
+{
+  "gauge_name": "Speedometer",
+  "needle_image_path": "gauges/speedometer_needle.png",
+  "rotation_center_x": 256,
+  "rotation_center_y": 245,
+  "start_value": 0,
+  "start_angle": 240,
+  "end_value": 320,
+  "end_angle": -60,
+  "calibration_points": [
+    {
+      "value": 0,
+      "angle": 240
+    },
+    {
+      "value": 80,
+      "angle": 165
+    },
+    {
+      "value": 160,
+      "angle": 90
+    },
+    {
+      "value": 240,
+      "angle": 15
+    },
+    {
+      "value": 320,
+      "angle": -60
+    }
+  ]
+}

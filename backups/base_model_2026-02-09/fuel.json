@@ -1,0 +1,110 @@
+{
+  "name": "Fuel",
+  "gauge_type": "fuel",
+  "start_angle": 232.0,
+  "sweep_angle": 90,
+  "min_value": 0,
+  "max_value": 100,
+  "background_color_r": 245,
+  "background_color_g": 235,
+  "background_color_b": 215,
+  "needles": {
+    "fuel": {
+      "name": "Fuel Level",
+      "color_r": 255,
+      "color_g": 0,
+      "color_b": 0,
+      "thickness": 3.0,
+      "length_offset": 30,
+      "center_cap_size": 15,
+      "style": "3d_pointer",
+      "enabled": true
+    },
+    "water": {
+      "name": "Water Temp",
+      "color_r": 0,
+      "color_g": 100,
+      "color_b": 255,
+      "thickness": 2.0,
+      "length_offset": 50,
+      "center_cap_size": 8,
+      "style": "3d_pointer",
+      "enabled": true
+    }
+  },
+  "background_image": null,
+  "image_offset_x": 0,
+  "image_offset_y": 0,
+  "show_numbers": true,
+  "number_interval": 0,
+  "text_size": 10,
+  "night_mode_bg_r": 30,
+  "night_mode_bg_g": 30,
+  "night_mode_bg_b": 30,
+  "night_mode_text_r": 255,
+  "night_mode_text_g": 255,
+  "night_mode_text_b": 255,
+  "rotation_center_x": 0,
+  "rotation_center_y": 0,
+  "calibration_points": [],
+  "needle_image_path": "gauges/needle.svg",
+  "needle_calibrations": {
+    "fuel": {
+      "needle_id": "fuel",
+      "needle_image_path": "C:\\Projects\\Supra Digital Cluster\\gauges\\needle.svg",
+      "gauge_name": "Fuel",
+      "needle_pivot_x": 192,
+      "needle_pivot_y": 208,
+      "needle_end_x": 73,
+      "needle_end_y": 252,
+      "gauge_pivot_x": 3360,
+      "gauge_pivot_y": 2320,
+      "calibration_points": [
+        {
+          "x": 2580,
+          "y": 2310,
+          "value": 0.0
+        },
+        {
+          "x": 3380,
+          "y": 1550,
+          "value": 100.0
+        }
+      ],
+      "min_value": 0,
+      "max_value": 100,
+      "needle_scale": 2.78
+    },
+    "water": {
+      "needle_id": "water",
+      "needle_image_path": "C:\\Projects\\Supra Digital Cluster\\gauges\\needle.svg",
+      "gauge_name": "Fuel",
+      "needle_pivot_x": 193,
+      "needle_pivot_y": 208,
+      "needle_end_x": 76,
+      "needle_end_y": 252,
+      "gauge_pivot_x": 3880,
+      "gauge_pivot_y": 3320,
+      "calibration_points": [
+        {
+          "x": 3160,
+          "y": 3320,
+          "value": 50.0
+        },
+        {
+          "x": 3880,
+          "y": 2560,
+          "value": 100.0
+        },
+        {
+          "x": 3300,
+          "y": 2830,
+          "value": 90.0
+        }
+      ],
+      "min_value": 0,
+      "max_value": 100,
+      "needle_scale": 2.77
+    }
+  }
+}

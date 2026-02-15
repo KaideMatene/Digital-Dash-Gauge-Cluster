@@ -1,0 +1,113 @@
+# Supra Digital Cluster Configuration
+
+# Display Settings
+display:
+  resolution: 1080x1080
+  framerate: 60
+  gpu_memory: 512  # MB
+  
+  # Display assignments (HDMI0, HDMI1, DSI0)
+  left: HDMI0    # Tachometer + Boost
+  center: HDMI1  # Speedometer + Temp
+  right: DSI0    # Fuel + Indicators
+
+# CAN Bus Configuration
+can:
+  interface: can0
+  bitrate: 500000  # bps
+  protocol: link_g4x
+  
+  # Message IDs (verify with Link G4X documentation)
+  message_ids:
+    rpm: 0x100
+    speed: 0x101
+    coolant_temp: 0x102
+    map_boost: 0x103
+
+# Fuel Sensor Configuration
+fuel:
+  # Source: can_bus (read from Link ECU)
+  source: can_bus
+  
+  # CAN message ID for fuel level (set after ECU configuration)
+  can_message_id: 0x104  # Update with actual ID from Link ECU
+  
+  # Smoothing
+  sample_count: 5
+  update_rate_hz: 10
+
+# GPIO Pin Assignments (BCM numbering)
+gpio:
+  headlights: 17      # Night mode trigger
+  high_beam: 27       # High beam indicator
+  warning_light: 22   # Warning light signal
+  dimmer_cs: 8        # MCP3008 chip select for dimmer
+
+# Gauge Styling
+gauges:
+  style: trd_manual  # Options: trd_manual, stock_jdm_s1
+  
+  tachometer:
+    max_rpm: 8000
+    redline: 7000
+    major_tick: 1000  # RPM
+    minor_tick: 500
+  
+  speedometer:
+    max_speed: 260    # km/h
+    major_tick: 20
+    minor_tick: 10
+  
+  temperature:
+    max_temp: 120     # °C
+    warning_temp: 105
+  
+  boost:
+    display_type: numeric  # numeric or gauge
+    max_boost: 30         # PSI
+
+# Night Mode
+night_mode:
+  enabled: true
+  trigger: headlights  # headlights, manual, auto
+  transition_ms: 200
+  
+  colors:
+    background: "#141414"
+    face: "#1E1E1E"
+    text: "#FFFFFF"
+    needle: "#FFFFFF"
+    
+# Day Mode
+day_mode:
+  colors:
+    background: "#F5EBD7"  # Cream/beige
+    face: "#F5EBD7"
+    text: "#000000"
+    needle: "#000000"
+
+# Brightness Control
+brightness:
+  min_percent: 20
+  max_percent: 100
+  dimmer_enabled: true
+
+# Warning Light
+warning:
+  flash: false          # Solid light, not flashing
+  color: "#DC143C"      # Crimson red
+  size: 50              # px diameter
+
+# Logging
+logging:
+  level: INFO           # DEBUG, INFO, WARNING, ERROR
+  file: /var/log/supra-cluster.log
+  max_size_mb: 10
+  backup_count: 3
+
+# Performance
+performance:
+  target_fps: 60
+  update_interval_ms: 16  # ~60 FPS
+  can_poll_hz: 100
+  gpio_poll_hz: 30

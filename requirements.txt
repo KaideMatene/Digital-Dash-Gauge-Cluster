@@ -1,0 +1,21 @@
+# Python dependencies for Supra Digital Cluster
+
+# CAN bus interface (with message filtering support)
+python-can==4.3.1
+
+# GPIO and hardware interfaces (for thermal management)
+RPi.GPIO==0.7.1
+spidev==3.6
+
+# ADC for fuel sensor
+adafruit-circuitpython-mcp3xxx==1.4.18
+
+# GUI framework (PyQt5 + OpenGL for GPU-accelerated rendering)
+PyQt5==5.15.10
+PyOpenGL==3.1.7
+
+# Configuration
+PyYAML==6.0.1
+
+# Utilities and performance monitoring
+numpy==1.26.4

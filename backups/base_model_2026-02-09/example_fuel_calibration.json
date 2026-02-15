@@ -1,0 +1,24 @@
+{
+  "gauge_name": "Fuel",
+  "needle_image_path": "gauges/fuel_needle.png",
+  "rotation_center_x": 128,
+  "rotation_center_y": 120,
+  "start_value": 0,
+  "start_angle": 180,
+  "end_value": 100,
+  "end_angle": 90,
+  "calibration_points": [
+    {
+      "value": 0,
+      "angle": 180
+    },
+    {
+      "value": 50,
+      "angle": 135
+    },
+    {
+      "value": 100,
+      "angle": 90
+    }
+  ]
+}

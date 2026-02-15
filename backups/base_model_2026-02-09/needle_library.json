@@ -1,0 +1,10 @@
+{
+  "needle.svg": {
+    "needle_image_path": "gauges/needle.svg",
+    "needle_pivot_x": 170,
+    "needle_pivot_y": 163,
+    "needle_end_x": 51,
+    "needle_end_y": 206,
+    "description": "Standard silver needle - use for all gauges"
+  }
+}

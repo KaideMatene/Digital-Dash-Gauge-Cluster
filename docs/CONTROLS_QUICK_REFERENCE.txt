@@ -1,0 +1,125 @@
+# Emulator Controls Quick Reference
+
+## Driving Modes (Press Number Keys)
+
+```
+0 = IDLE         (Engine idling, 1000 RPM)
+1 = SLOW REV     (Gentle rev to 3000 RPM)
+2 = MEDIUM REV   (Moderate rev to 5000 RPM)
+3 = FAST REV     (Aggressive rev to 7000 RPM)
+4 = HIGHWAY      (Steady cruise at 130 km/h)
+5 = REDLINE      (Bouncing off redline 6500-8000)
+6 = REALISTIC    (Full driving cycle)
+```
+
+## General Controls
+
+```
+SPACE  = Pause/Resume
+n      = Night Mode (toggle)
+h      = High Beam (toggle)
+w      = Warning Light (toggle)
++      = Brightness Up
+-      = Brightness Down
+?      = Show Help
+q/ESC  = Quit
+```
+
+## Game Controller Layout (if using gamepads)
+
+```
+Number Pad 0-6 for modes (or numpad)
+```
+
+---
+
+## Quick Testing Workflow
+
+1. **Start emulator:**
+   ```
+   python emulator.py
+   ```
+
+2. **Test each mode for 10 seconds:**
+   ```
+   Press 0 (idle) → wait 10s
+   Press 1 (slow rev) → watch 2-3 cycles
+   Press 2 (medium rev) → watch boost gauge
+   etc.
+   ```
+
+3. **Verify all gauges responding:**
+   - ✅ Tachometer needle moving
+   - ✅ Speedometer updating
+   - ✅ Fuel gauge decreasing
+   - ✅ Temperature rising with load
+
+4. **Test night mode:**
+   ```
+   Press n for dark theme
+   Press n again for day theme
+   ```
+
+---
+
+## What to Expect
+
+### In IDLE mode (press 0):
+- RPM bounces around 1000 (±200)
+- Speed: 0 km/h
+- Temperature: ~80°C
+- Boost: 0.0 bar
+
+### In SLOW REV mode (press 1):
+- RPM climbs 1000 → 3000 over 10 seconds
+- Speed climbs 0 → 40 km/h
+- Temperature rises to ~85°C
+- Boost rises to 0.1 bar
+- Repeats every 10 seconds
+
+### In HIGHWAY mode (press 4):
+- RPM stays around 3500 (±300)
+- Speed cruises at 130 km/h (±20)
+- Temperature stable ~82°C
+- Boost: 0.0 bar
+- Very realistic steady-state operation
+
+### In REDLINE mode (press 5):
+- RPM bounces 6500 → 8000 every 4 seconds
+- Very aggressive/racing behavior
+- Temperature spikes to 90°C
+- Boost up to 1.2 bar
+- Good for testing redline zone rendering
+
+---
+
+## Troubleshooting
+
+**Gauges not showing?**
+- Make sure window is visible (check taskbar)
+- Try `python emulator.py --fps 50` for default settings
+- Check that all 3 gauges appear (Tachometer, Speedometer, Fuel)
+
+**Modes not switching?**
+- Make sure window is in focus (click on it first)
+- Use number keys at top of keyboard (not numpad)
+- Check console output shows "Mode switched to: IDLE" etc.
+
+**Performance issues?**
+- Close other programs (gaming, streaming, editing)
+- Try `python emulator.py --fps 30` for slower FPS
+- Update graphics drivers to latest version
+
+---
+
+## Pro Tips
+
+1. **Pause while testing** - Press SPACE to freeze simulation
+2. **Watch FPS counter** - Window title shows actual FPS
+3. **Use fullscreen** - `python emulator.py --fullscreen`
+4. **Mix controls** - Pause, switch night mode, switch modes, observe
+5. **Try at different FPS** - `python emulator.py --fps 60` or `--fps 30`
+
+---
+
+See `EMULATOR_GUIDE.md` for detailed explanations and `GAUGE_CUSTOMIZATION.md` for customization options.

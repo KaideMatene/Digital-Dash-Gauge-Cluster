@@ -1,0 +1,32 @@
+{
+  "gauge_name": "Tachometer",
+  "needle_image_path": "gauges/tachometer_needle.png",
+  "rotation_center_x": 256,
+  "rotation_center_y": 245,
+  "start_value": 0,
+  "start_angle": 270,
+  "end_value": 10000,
+  "end_angle": 0,
+  "calibration_points": [
+    {
+      "value": 0,
+      "angle": 270
+    },
+    {
+      "value": 2500,
+      "angle": 202
+    },
+    {
+      "value": 5000,
+      "angle": 135
+    },
+    {
+      "value": 7500,
+      "angle": 67
+    },
+    {
+      "value": 10000,
+      "angle": 0
+    }
+  ]
+}

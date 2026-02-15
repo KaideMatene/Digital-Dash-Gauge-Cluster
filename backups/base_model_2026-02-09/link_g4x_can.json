@@ -1,0 +1,83 @@
+{
+  "description": "Link G4X Fury ECU CAN Protocol Mapping",
+  "version": "1.0",
+  "bitrate": 500000,
+  "notes": "Verify these message IDs with your specific Link ECU CAN stream configuration",
+  
+  "messages": [
+    {
+      "id": "0x100",
+      "name": "Engine RPM",
+      "length": 8,
+      "signals": [
+        {
+          "name": "rpm",
+          "start_bit": 0,
+          "length": 16,
+          "byte_order": "big_endian",
+          "value_type": "unsigned",
+          "factor": 1,
+          "offset": 0,
+          "unit": "RPM"
+        }
+      ]
+    },
+    {
+      "id": "0x101",
+      "name": "Vehicle Speed",
+      "length": 8,
+      "signals": [
+        {
+          "name": "speed",
+          "start_bit": 0,
+          "length": 16,
+          "byte_order": "big_endian",
+          "value_type": "unsigned",
+          "factor": 1,
+          "offset": 0,
+          "unit": "km/h"
+        }
+      ]
+    },
+    {
+      "id": "0x102",
+      "name": "Coolant Temperature",
+      "length": 8,
+      "signals": [
+        {
+          "name": "coolant_temp",
+          "start_bit": 0,
+          "length": 8,
+          "byte_order": "big_endian",
+          "value_type": "unsigned",
+          "factor": 1,
+          "offset": -40,
+          "unit": "°C"
+        }
+      ]
+    },
+    {
+      "id": "0x103",
+      "name": "Manifold Absolute Pressure",
+      "length": 8,
+      "signals": [
+        {
+          "name": "map",
+          "start_bit": 0,
+          "length": 16,
+          "byte_order": "big_endian",
+          "value_type": "unsigned",
+          "factor": 0.1,
+          "offset": 0,
+          "unit": "kPa",
+          "comment": "Convert to boost PSI: (kPa - 101.325) * 0.145038"
+        }
+      ]
+    }
+  ],
+  
+  "conversion_formulas": {
+    "boost_psi_from_map": "(map_kpa - 101.325) * 0.145038",
+    "vacuum_inhg_from_map": "(101.325 - map_kpa) * 0.2953"
+  }
+}

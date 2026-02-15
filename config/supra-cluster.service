@@ -1,0 +1,29 @@
+[Unit]
+Description=Supra Digital Gauge Cluster
+After=network.target multi-user.target
+
+[Service]
+Type=simple
+User=pi
+Group=pi
+WorkingDirectory=/home/pi/supra-cluster
+Environment="DISPLAY=:0"
+Environment="XAUTHORITY=/home/pi/.Xauthority"
+ExecStartPre=/bin/sleep 5
+ExecStartPre=/usr/bin/sudo /sbin/ip link set can0 type can bitrate 500000
+ExecStartPre=/usr/bin/sudo /sbin/ip link set up can0
+ExecStart=/usr/bin/python3 /home/pi/supra-cluster/src/main.py
+Restart=always
+RestartSec=3
+StandardOutput=journal
+StandardError=journal
+
+# Security settings
+NoNewPrivileges=true
+PrivateTmp=true
+
+# Watchdog
+WatchdogSec=30
+
+[Install]
+WantedBy=graphical.target

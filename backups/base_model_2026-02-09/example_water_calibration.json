@@ -1,0 +1,32 @@
+{
+  "gauge_name": "Water",
+  "needle_image_path": "gauges/water_needle.png",
+  "rotation_center_x": 128,
+  "rotation_center_y": 120,
+  "start_value": 50,
+  "start_angle": 180,
+  "end_value": 130,
+  "end_angle": 0,
+  "calibration_points": [
+    {
+      "value": 50,
+      "angle": 180
+    },
+    {
+      "value": 70,
+      "angle": 135
+    },
+    {
+      "value": 90,
+      "angle": 90
+    },
+    {
+      "value": 110,
+      "angle": 45
+    },
+    {
+      "value": 130,
+      "angle": 0
+    }
+  ]
+}

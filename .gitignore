@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+/var/log/supra-cluster.log
+
+# Configuration (local overrides)
+config/config.local.yaml
+
+# Temporary files
+*.tmp
+*.bak
+*.backup
+tmpclaude-*
+nul
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Raspberry Pi specific
+*.img
+*.img.gz
+
+# Editor workspace files
+*.code-workspace
