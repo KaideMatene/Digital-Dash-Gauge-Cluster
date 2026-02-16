@@ -211,11 +211,12 @@
     "symbol_1": {
       "symbol_id": "symbol_1",
       "image_path": "C:/Projects/Supra Digital Cluster/gauges/symbols/Warning_Indicator.png",
-      "position_x": 1120,
-      "position_y": 624,
+      "display_name": "Warning Indicator",
+      "position_x": 1123,
+      "position_y": 665,
       "scale": 1.0,
       "anchor": "center",
-      "visible": false,
+      "visible": true,
       "visibility_condition": {
         "condition_type": "bool",
         "data_key": "",

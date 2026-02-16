@@ -1276,11 +1276,11 @@ class GaugePreview(QMainWindow):
 
         scale_spin = QDoubleSpinBox()
         scale_spin.setRange(0.1, 3.0)
-        scale_spin.setSingleStep(0.1)
+        scale_spin.setSingleStep(0.01)
         scale_spin.setValue(default_scale)
-        scale_spin.setDecimals(1)
+        scale_spin.setDecimals(2)
         scale_spin.setSuffix("x")
-        scale_spin.setMaximumWidth(80)
+        scale_spin.setMaximumWidth(90)
         scale_spin.valueChanged.connect(lambda value, sid=symbol_id: self._on_symbol_scale_changed(sid, value))
         row_layout.addWidget(scale_spin)
 

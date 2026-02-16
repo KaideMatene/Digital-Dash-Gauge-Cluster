@@ -218,11 +218,12 @@
     "symbol_1": {
       "symbol_id": "symbol_1",
       "image_path": "C:/Projects/Supra Digital Cluster/gauges/symbols/Low Fuel.png",
+      "display_name": "Low Fuel",
       "position_x": 912,
       "position_y": 790,
       "scale": 1.0,
       "anchor": "center",
-      "visible": false,
+      "visible": true,
       "visibility_condition": {
         "condition_type": "bool",
         "data_key": "",
@@ -235,6 +236,7 @@
     "symbol_2": {
       "symbol_id": "symbol_2",
       "image_path": "C:/Projects/Supra Digital Cluster/gauges/symbols/High_Beam.png",
+      "display_name": "High Beam",
       "position_x": 1245,
       "position_y": 531,
       "scale": 1.0,
@@ -252,6 +254,7 @@
     "symbol_3": {
       "symbol_id": "symbol_3",
       "image_path": "C:/Projects/Supra Digital Cluster/gauges/symbols/Low_water_warning.png",
+      "display_name": "Water Warning",
       "position_x": 1319,
       "position_y": 832,
       "scale": 1.0,
@@ -269,9 +272,10 @@
     "symbol_4": {
       "symbol_id": "symbol_4",
       "image_path": "C:/Projects/Supra Digital Cluster/gauges/symbols/traction-control-warning-light.png",
+      "display_name": "Traction Control",
       "position_x": 1319,
       "position_y": 630,
-      "scale": 0.20000000000000015,
+      "scale": 0.23000000000000004,
       "anchor": "center",
       "visible": true,
       "visibility_condition": {
