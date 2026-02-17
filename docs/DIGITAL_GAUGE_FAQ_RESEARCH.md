@@ -261,6 +261,8 @@ export __GL_SYNC_TO_VBLANK=1
 - ✗ More complex to implement (shaders, VBOs)
 
 **Performance comparison (3x 1080x1080 displays):**
+*Tested on Orange Pi 6 Plus (RK3588, Mali-G610) rendering analog gauges with anti-aliased needles at 60 Hz refresh*
+
 | Method | FPS | CPU Load | GPU Load |
 |--------|-----|----------|----------|
 | QPainter | 20-30 | 70-80% | 5% |
@@ -630,8 +632,8 @@ class GaugeCluster:
    # Record CAN traffic from real car
    candump -l can0
    
-   # Replay on virtual CAN
-   canplayer vcan0 < candump-2024-02-17_*.log
+   # Replay on virtual CAN (file will have timestamp in name)
+   canplayer vcan0 < candump-YYYY-MM-DD_*.log
    ```
 
 **Sources:**
