@@ -96,6 +96,8 @@ supra-cluster/
 ## Documentation
 
 - [Full Project Plan](docs/plan.md) - Complete specifications and implementation details
+- [Digital Gauge FAQ & Research Resources](docs/DIGITAL_GAUGE_FAQ_RESEARCH.md) - **Comprehensive Q&A with internet-researched answers**
+- [Internet Research Guide](docs/INTERNET_RESEARCH_GUIDE.md) - **How to research and find answers for digital gauge questions**
 - [Hardware Setup](docs/hardware.md) - Component assembly instructions
 - [Wiring Guide](docs/wiring.md) - Harness integration and connections
 - [Calibration](docs/calibration.md) - Sensor calibration procedures
